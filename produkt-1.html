@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mat, Fika & AW | Kaferang Nytorget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo"><a href="index.html">Kaferang<span>.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkt-1.html">Mat & Fika</a></li>
+                <li><a href="produkt-2.html">Abonnera & Event</a></li>
+                <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200');">
+            <div class="hero-content">
+                <h1>Frukost, Fika & After Work</h1>
+                <p>Från morgonens första espresso till kvällens avslappnade AW-mingel.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="grid-2">
+                <div>
+                    <h2>Smaker som imponerar</h2>
+                    <p>Vi på Kaferang brinner för den goda maten och den unika atmosfären. Våra frukostpaket, matiga sallader, hälsosamma luncher och omsorgsfullt utvalda drycker för kvällens AW är komponerade för att ge dig en smakupplevelse utöver det vanliga.</p>
+                    <br>
+                    <ul>
+                        <li><strong>Frukost:</strong> Serveras varje morgon med nybakat bröd och specialty coffee.</li>
+                        <li><strong>Lunch & Fika:</strong> Lätta och fräscha rätter samt ett brett utbud av bakverk.</li>
+                        <li><strong>AW:</strong> Goda drycker och plockmat i en mysig miljö på Södermalm.</li>
+                    </ul>
+                </div>
+                
+                <!-- Formulärplats för framtida HubSpot-integration / Konverteringsmätning -->
+                <div class="form-container">
+                    <h3>Boka bord för AW eller Lunch</h3>
+                    <p style="font-size:14px; margin-bottom:15px; color:#666;">Fyll i formuläret för att säkra din plats (Simulerat formulär för analyskursen).</p>
+                    
+                    <form id="form-bord-bokning" action="thank-you.html" method="GET">
+                        <div class="form-group">
+                            <label for="name">Namn</label>
+                            <input type="text" id="name" name="name" required placeholder="Ditt för- och efternamn">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-postadress</label>
+                            <input type="email" id="email" name="email" required placeholder="namn@foretag.se">
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Typ av bokning</label>
+                            <select id="type" name="type">
+                                <option value="frukost">Frukost</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="aw">After Work (AW)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Skicka bokningsförfrågan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kaferang Nytorget | Skånegatan 81, Södermalm</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

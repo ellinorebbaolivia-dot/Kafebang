@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abonnera Kaferang | Skräddarsydda Event & Fester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo"><a href="index.html">Kaferang<span>.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkt-1.html">Mat & Fika</a></li>
+                <li><a href="produkt-2.html">Abonnera & Event</a></li>
+                <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200');">
+            <div class="hero-content">
+                <h1>Abonnera Kaferang för ditt nästa event</h1>
+                <p>Vi skapar magiska och oförglömliga matupplevelser anpassade efter dina önskemål.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="grid-2">
+                <!-- Formulärplats för Offertförfrågan (Utmärkt för GA4 Funnel-spårning) -->
+                <div class="form-container">
+                    <h3>Begär en kostnadsfri offert</h3>
+                    <p style="font-size:14px; margin-bottom:15px; color:#666;">Planerar du företagsevent eller födelsedagsfest? Låt oss hjälpa dig.</p>
+                    
+                    <form id="form-event-offert" action="thank-you.html" method="GET">
+                        <div class="form-group">
+                            <label for="company">Företag / Organisation (Valfritt)</label>
+                            <input type="text" id="company" name="company" placeholder="Företagsnamn AB">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-person">Kontaktperson</label>
+                            <input type="text" id="contact-person" name="contact_person" required placeholder="För- och efternamn">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-postadress</label>
+                            <input type="email" id="email" name="email" required placeholder="exempel@domän.se">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Beräknat antal gäster</label>
+                            <input type="number" id="guests" name="guests" min="10" max="100" placeholder="Minst 10 personer">
+                        </div>
+                        <button type="submit" class="btn btn-secondary" style="width: 100%;">Skicka offertförfrågan</button>
+                    </form>
+                </div>
+
+                <div>
+                    <h2>Skräddarsydd service som imponerar</h2>
+                    <p>Vare sig det är en intim födelsedagsfest, ett nätverksevent med företaget eller en produktlansering, erbjuder Kaferang Nytorget en flexibel lokal mitt på Södermalm. Vi kombinerar en varm, industriell och mysig miljö med mat och dryck i absolut toppklass.</p>
+                    <br>
+                    <blockquote>
+                        <em>"Maten var helt fantastisk och personalen gjorde vår födelsedagsfest till ett minne för livet!"</em>
+                    </blockquote>
+                    <br>
+                    <p>Kontakta oss idag via formuläret för att diskutera menyer, sittning och teknisk utrustning. Vi ser till att ditt event blir precis så magiskt som du har tänkt dig.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kaferang Nytorget | Skånegatan 81, Södermalm</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

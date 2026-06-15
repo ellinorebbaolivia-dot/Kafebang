@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt & Hitta till oss | Kaferang Nytorget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo"><a href="index.html">Kaferang<span>.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="produkt-1.html">Mat & Fika</a></li>
+                <li><a href="produkt-2.html">Abonnera & Event</a></li>
+                <li><a href="nyhetsbrev.html">Nyhetsbrev</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 style="margin-bottom: 30px; text-align: center;">Kontakta Oss</h1>
+        
+        <div class="grid-2">
+            <div>
+                <h2>Hitta till Skånegatan 81</h2>
+                <p>Vi ligger i hjärtat av det levande Nytorget på Södermalm i Stockholm. Kom förby på en kaffe eller boka ett möte!</p>
+                <br>
+                <p><strong>Adress:</strong> Skånegatan 81, 116 35 Stockholm</p>
+                <p><strong>E-post:</strong> info@kaferangnytorget-demo.se</p>
+                <br>
+                <h3>Öppettider</h3>
+                <p>Måndag - Torsdag: 08:00 - 21:00</p>
+                <p>Fredag - Lördag: 08:00 - 23:00</p>
+                <p>Söndag: 09:00 - 18:00</p>
+                <br>
+                <a href="index.html" class="btn btn-secondary">Tillbaka till startsidan</a>
+            </div>
+
+            <div class="form-container">
+                <h3>Skicka ett meddelande</h3>
+                <form id="form-general-contact" action="thank-you.html" method="GET">
+                    <div class="form-group">
+                        <label for="contact-name">Namn</label>
+                        <input type="text" id="contact-name" name="name" required placeholder="Ditt namn">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">E-postadress</label>
+                        <input type="email" id="contact-email" name="email" required placeholder="namn@mejl.se">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Meddelande</label>
+                        <textarea id="contact-message" name="message" rows="4" required placeholder="Hur kan vi hjälpa dig?"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Skicka meddelande</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kaferang Nytorget | Skånegatan 81, Södermalm</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
